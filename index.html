@@ -10,28 +10,231 @@
     <header class="main-header"></header>
     <main class="container">
         <h1 class="visually-hidden">Страница Колл-центра</h1>
+
         <section class="info-user">
             <h2 class="info-user-title">1. Информация пользователя</h2>
-            <ul class="info-user-list">
+
+            <div class="nav-user-div">
+                <!-- <p class="nav-user user-contract">Договор</p> -->
+                <form class="user-id-form" action="" method="POST">
+                    <input type="text" name="user-id" class="nav-user user-contract" placeholder="Договор">
+                </form>
+                <ul class="nav-user-list">
+                    <li class="nav-user nav-user-item">
+                        <button type="button" class="button-search button">Поиск</button>
+                    </li>
+                    <li class="nav-user nav-user-item">
+                        <button type="button" class="button-new button">Новый</button>
+                    </li>
+                    <li class="nav-user nav-user-item">
+                        <button type="button" class="button-company button">Компания</button>
+                    </li>
+                </ul>
+                <p class="nav-user phone">Телефон</p>
+            </div>
+
+            <p class="info-user-notfound hidden">Мы не смогли определить номер договора, сделайте выбор вручную</p>
+
+            <p class="info-user-choose hidden">
+                Выберите номер договора:
+                <button type="button" class="button-choose button-border">Договор</button>
+                <button type="button" class="button-choose button-border">Договор</button>
+            </p>
+
+            <div class="info-user-search-div hidden">
+                Поиск по номеру договора или адресу
+                <form class="user-search-form" action="" method="POST">
+                    <input name="user-id" type="text" placeholder="Договор">
+                    <input name="street-name" type="text" placeholder="Улица">
+                    <input name="house" type="text" placeholder="Дом">
+                    <input name="appartment" type="text" placeholder="Квартира">
+                    <button type="submit" class="button-user-search button-border active">Поиск</button>
+                </form>
+                <p class="info-user-search-choose hidden">
+                    Выберите номер договора:
+                    <button type="button" class="button-choose button-border">Договор</button>
+                    <button type="button" class="button-choose button-border">Договор</button>
+                </p>
+            </div>
+
+            <!-- Перевести звонок на специалиста? -->
+
+            <ul class="info-user-list active">
                 <li class="info-user-item">
-                    <input class="button" type="number" placeholder="Договор">
+                    <p class="green">1.1</p>
+                    <p class="user-name">ФИО пользователя</p>
                 </li>
                 <li class="info-user-item">
-                    <button class="button">Поиск</button>
+                    <p class="green">1.2</p>
+                    <p class="user-adress">Адрес пользователя</p>
                 </li>
                 <li class="info-user-item">
-                    <button class="button">Новый</button>
+                    <p class="green">1.3</p>
+                    <p class="user-rate">Тариф пользователя</p>
+                    <p class="user-rate-speed">Заявленая скорость</p>
+                    <p class="user-rate-cost">Стоимость тарифа</p>
                 </li>
                 <li class="info-user-item">
-                    <button class="button">Компания</button>
+                    <p class="green">1.4</p>
+                    <p class="user-period">Период тарифа</p>
+                    <p class="user-period-date">Дата окончания тарифа</p>
+                    <p class="user-period-days">Количество дней до окончания</p>
                 </li>
                 <li class="info-user-item">
-                    <p class="button">Телефон</p>
+                    <p class="green">1.5</p>
+                    <p class="user-balance-name">Счет</p>
+                    <p class="user-balance-date">Дата последнего пополнения</p>
+                    <p class="user-balance">Баланс пользователя</p>
+                </li>
+                <li class="info-user-item">
+                    <p class="green">1.6</p>
+                    <p class="user-call-name">Обращения в ТП</p>
+                    <p class="user-call-date">Дата последнего обращения</p>
+                    <p class="user-call-days">Количество дней с последнего обращения</p>
+                </li>
+                <li class="info-user-item">
+                    <p class="green">1.7</p>
+                    <p class="user-devices-name">Устройства</p>
+                    <p class="user-devices-quantity">Количество устройств</p>
+                </li>
+                <li class="info-user-item">
+                    <p class="green">1.8</p>
+                    <p class="user-router">Роутер</p>
+                    <p class="user-router-name">Марка и модель роутера</p>
+                    <p class="user-router-status">Статут роутера</p>
+                </li>
+                <li class="info-user-item">
+                    <p class="green">1.9</p>
+                    <p class="user-tvbox">ТВ-приставка</p>
+                    <p class="user-tvbox-name">Марка и модель ТВ-приставки</p>
+                    <p class="user-tvbox-quantity">Количество приставок</p>
+                </li>
+                <li class="info-user-item">
+                    <p class="green">1.10</p>
+                    <p class="user-CCTV">Видеонаблюдение</p>
+                    <p class="user-CCTV-quantity">Количество камер</p>
+                </li>
+                <li class="info-user-item">
+                    <p class="green">1.11</p>
+                    <p class="user-telephony">Телефония</p>
+                    <p class="user-telephony-quantity">Количество телефонии</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="info-firm">
+            <h2 class="info-firm-title">2. Интернет-провайдер "Сатнет"</h2>
+            <p class="info-firm-name">ООО “Компьютерные Информационные Технологии”</p>
+
+            <ul class="info-firm-list">
+                <li class="info-firm-item">
+                    <p class="blue">2.1</p>
+                    <p class="firm-adress">Старый Петергоф, ул. Ботаническая д.18/3</p>
+                </li>
+                <li class="info-firm-item">
+                    <p class="blue">2.2</p>
+                    <p class="firm-workhour">Режим работы офисов</p>
+                </li>
+                <li class="info-firm-item">
+                    <p class="blue">2.3</p>
+                    <p class="firm-refill-balance">Пополнение счета</p>
+                </li>
+                <li class="info-firm-item">
+                    <p class="blue">2.4</p>
+                    <p class="firm-сonnection">Подключение</p>
+                </li>
+                <li class="info-firm-item">
+                    <p class="blue">2.5</p>
+                    <p class="firm-promotions">Акции</p>
+                </li>
+                <li class="info-firm-item">
+                    <p class="blue">2.6</p>
+                    <p class="firm-tariffs-internet">Тарифы Интернет</p>
+                </li>
+                <li class="info-firm-item">
+                    <p class="blue">2.7</p>
+                    <p class="firm-tariffs-tv">Тарифы ТВ</p>
+                </li>
+                <li class="info-firm-item">
+                    <p class="blue">2.8</p>
+                    <p class="firm-tariffs-telephony">Тарифы Телефонии</p>
+                </li>
+                <li class="info-firm-item">
+                    <p class="blue">2.9</p>
+                    <p class="firm-tariffs-CCTV">Тарифы Видеонаблюдение</p>
+                </li>
+                <li class="info-firm-item">
+                    <p class="blue">2.10</p>
+                    <p class="firm-price-services">Тарифы на работы Мастера</p>
+                </li>
+                <li class="info-firm-item">
+                    <p class="blue">2.11</p>
+                    <p class="firm-price-devices">Цены на оборудование</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="diagnostics-user">
+            <h2 class="diagnostics-user-title">3. Диагностика пользователя</h2>
+            <ul class="diagnostics-user-list">
+                <li class="diagnostics-user-item">
+                    <p class="gray">2.1</p>
+                    <p class="diagnostics-device-name">Незарегистрированное устройства</p>
+                    <p class="diagnostics-device-mac">Мак адресс зарегистрирован</p>
+                </li>
+                <li class="diagnostics-user-item">
+                    <p class="gray">2.2</p>
+                    <p class="diagnostics-link-name">Нестабильное соединение</p>
+                    <p class="diagnostics-link">35 мин.</p>
+                </li>
+                <li class="diagnostics-user-item">
+                    <p class="gray">2.3</p>
+                    <p class="diagnostics-port-name">Перепутаны порты на роутере</p>
+                </li>
+            </ul>
+        </section>
+        <section class="solutions">
+            <h2 class="solutions-title">4. Возможные решения</h2>
+            <ul class="solutions-list">
+                <li class="solutions-item">
+                    <p class="red">4.1</p>
+                    <p class="solutions-router-reboot red">Перезагрузить роутер</p>
+                </li>
+                <li class="solutions-item">
+                    <p class="solutions-router-link">Проверить порты на роутере</p>
+                </li>
+                <li class="solutions-item">
+                    <p class="green">4.2</p>
+                    <p class="solutions-test-cable">Проверить кабель</p>
+                </li>
+                <li class="solutions-item">
+                    <p class="solutions-master">Вызвать мастера</p>
+                </li>
+                <li class="solutions-item">
+                    <p class="green">4.3</p>
+                    <p class="solutions-registration-device">Зарегистрировать новое устройство</p>
+                </li>
+                <li class="solutions-item">
+                    <p class="solutions-internet-debt">Подключить интернет в долг</p>
+                </li>
+                <li class="solutions-item">
+                    <p class="solutions-deferred-payment">Подключить отложенный платеж</p>
+                </li>
+                <li class="solutions-item">
+                    <p class="green">4.4</p>
+                    <p class="solutions-restore-password">Востановить пароль</p>
+                </li>
+                <li class="solutions-item">
+                    <p class="solutions-tvbox-update">Обновить приставку</p>
+                </li>
+                <li class="solutions-item">
+                    <p class="solutions-tvbox-xxx">Отключить каналы для взрослых</p>
                 </li>
             </ul>
         </section>
     </main>
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">
+    </footer>
 </body>
 
 </html>
