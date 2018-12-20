@@ -1,0 +1,149 @@
+.hidden,
+.user-contract.hidden {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+body {
+    margin-top: 20px;
+    padding: 0;
+}
+
+main {
+    /* width: 1300px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    background-color: yellow;
+    width: 550px;
+    min-height: 10px;
+    margin-right: 20px;
+    margin-bottom: 2px;
+}
+
+.green {
+    color: #7DBD42;
+}
+
+.blue {
+    color: #0B9BCE;
+}
+
+.red {
+    color: #ED1C24;
+}
+/* section:nth-child(even) {
+    margin-right: 20px;
+} */
+
+/* section:nth-child(odd) {
+    clear: both;
+} */
+
+li {
+    list-style-type: none;
+    /* Убираем маркеры */
+}
+
+ul {
+    margin-left: 0;
+    /* Отступ слева в браузере IE и Opera */
+    padding-left: 0;
+    /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 0;
+    border-radius: 5px;
+}
+
+h2.info-user-title {
+    background-color: #65AD45;
+}
+
+h2.info-firm-title {
+    background-color: #0B9BCE;
+}
+
+h2.diagnostics-user-title {
+    background-color: #939598;
+}
+
+h2.solutions-title {
+    background-color: #009444;
+}
+
+.after-title {
+    background-color: #F1F2F2;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.nav-user-div input {
+    width: 52px;
+    height: 12px;
+}
+
+.nav-user-div * {
+    display: inline;
+    text-align: center;
+    /* padding: 5px 8px; */
+    padding: 5px 12px;
+}
+
+.nav-user-div form, .nav-user-div li{
+    border-right: 1px solid black;
+}
+
+.info-firm-name {
+    height: 28px;
+    text-align: center;
+}
+
+li p {
+    display: inline-block;
+    /* Отображать как строчный элемент */
+    margin: 0px;
+    /* Отступ слева */
+    /* padding: 105px; */
+    /* border: 1px solid #000; Рамка вокруг текста */
+    padding: 10px 0;
+    /* Поля вокруг текста */
+}
+
+
+
+li p:first {
+    /* display: flex;
+    justify-content: flex-start; */
+}
+
+li p:nth-child(2) {
+    /* display: flex; */
+}
