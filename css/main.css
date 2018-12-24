@@ -104,12 +104,27 @@ h2.solutions-title {
     display: inline;
     text-align: center;
     /* padding: 5px 8px; */
-    padding: 5px 12px;
+    padding: 5px 10px;
+}
+
+.nav-user-div ul {
+    padding: 0;
 }
 
 .nav-user-div>form,
 .nav-user-div li {
     border-right: 1px solid black;
+}
+
+.nav-user-div>.phone {
+    /* text-align: center; */
+    display: inline-block;
+    width: 155px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    /* margin-left: auto; */
 }
 
 .info-firm-name {
@@ -151,54 +166,69 @@ li>span {
     /* Поля вокруг текста */
 }
 
-li>span {
+li>span:first-child {
     margin-right: 10px;
 }
 
-ul>li:nth-child(10)>span,
-ul>li:nth-child(11)>span {
+li>span:last-child {
+    border: 1px green solid;
+    width: 35px;
+}
+
+ul>li:nth-child(10)>span:first-child,
+ul>li:nth-child(11)>span:first-child {
     margin-right: 3px;
     /* border: 1px solid black; */
 }
 
 li p:nth-of-type(1) {
-    /* text-align: left; */
     margin-right: auto;
 }
 
 li p:nth-of-type(2) {
     border: 1px solid red;
-    /* text-align: center; */
-    /* margin-left: auto; */
-    /* justify-content: flex-start; */
     flex: 0 0 10em;
-
+    /* flex: 0 0 5em; */
 }
 
 li p:nth-of-type(3) {
     border: 1px solid black;
-    /* justify-content: right; */
-    /* float: right;
-    clear: right; */
-    /* justify-content: right; */
-
-    flex: 0 0 10em;
-
+    flex: 0 0 2em;
 }
 
-li.solutions-item > p {
+/* .user-rate-cost,
+.user-balance
+{
+margin-right: 9px;
+} */
+.span-speed {
+    padding: 10px 86px 10px 0px;
+}
+
+li>p.user-rate-speed {
+    max-width: 40px;
+}
+
+li>p.user-router-status {
+    min-width: 69px;
+    text-align: center;
+}
+
+li>p.user-devices-quantity,
+li>p.user-CCTV-quantity,
+li>p.user-telephony-quantity,
+li>p.diagnostics-link {
+    max-width: 32px;
+}
+
+/* li.solutions-item > p {
     border: 1px solid black;
-}
+} */
 
-li.solutions-item > p:first-child {
+li.solutions-item>p:first-child {
     margin-left: 30px;
 }
 
-li p:first {
-    /* display: flex;
-    justify-content: flex-start; */
-}
-
-li p:nth-child(2) {
-    /* display: flex; */
-}
+/* p {
+    text-align: right;
+} */
