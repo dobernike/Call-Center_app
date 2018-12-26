@@ -31,6 +31,9 @@ section {
     margin-bottom: 2px;
 }
 
+.info-firm {
+    /* min-height: 530px; */
+}
 .green {
     color: #7DBD42;
 }
@@ -51,7 +54,7 @@ section {
     clear: both;
 } */
 
-button {
+.button {
     padding: 0;
     border: none;
     font: inherit;
@@ -60,7 +63,26 @@ button {
     /* отображаем курсор в виде руки при наведении; некоторые
     считают, что необходимо оставлять стрелочный вид для кнопок */
     cursor: pointer;
+}
+
+.button-border {
+/* display: flex;
+justify-content: space-between; */
+    border: 2px solid #E81E25;
+    border-radius: 5px;
+
+    width: 110px;
+    height: 32px;
+
+    margin-left: 5px;
+    /* margin-right: 5px; */
+
+    color:#E81E25;
+}
+
+.nav-user-button {
     text-decoration: underline;
+    text-decoration-color: #939598;
 }
 
 h2 {
@@ -88,11 +110,29 @@ h2.solutions-title {
     background-color: #009444;
 }
 
+.after-title,
+.info-user-choose {
+    margin: 0;
+    border: 1px solid #939598;
+    border-radius: 5px;
+}
+
 .after-title {
     background-color: #F1F2F2;
-    margin: 0;
-    border: 1px solid black;
-    border-radius: 5px;
+}
+
+.info-user-notfound,
+.info-firm-name {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.info-user-choose {
+    padding: 8px 0;
+}
+
+.info-user-search-div {
+    /* Что-то */
 }
 
 .nav-user-div input {
@@ -113,7 +153,7 @@ h2.solutions-title {
 
 .nav-user-div>form,
 .nav-user-div li {
-    border-right: 1px solid black;
+    border-right: 1px solid #939598;
 }
 
 .nav-user-div>.phone {
@@ -125,13 +165,6 @@ h2.solutions-title {
     padding: 0;
     white-space: nowrap;
     /* margin-left: auto; */
-}
-
-.info-firm-name {
-    /* height: 28px; */
-    padding: 5px 0;
-    text-align: center;
-    /* vertical-align: middle; */
 }
 
 ul {
@@ -192,7 +225,7 @@ li p:nth-of-type(2) {
 }
 
 li p:nth-of-type(3) {
-    border: 1px solid black;
+    border: 1px solid #939598;
     flex: 0 0 2em;
 }
 
