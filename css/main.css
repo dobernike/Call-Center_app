@@ -25,10 +25,10 @@ main {
 
 section {
     background-color: yellow;
-    width: 550px;
+    width: 720px;
     min-height: 10px;
     margin-right: 20px;
-    margin-bottom: 2px;
+    margin-bottom: 20px;
 }
 
 .info-firm {
@@ -74,9 +74,6 @@ justify-content: space-between; */
     width: 110px;
     height: 32px;
 
-    margin-left: 5px;
-    /* margin-right: 5px; */
-
     color:#E81E25;
 }
 
@@ -87,9 +84,15 @@ justify-content: space-between; */
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
+.button-choose {
+    margin-left: 40px;
+    /* margin-right: 5px; */
+}
+
 .nav-user-button {
     text-decoration: underline;
     text-decoration-color: #939598;
+    width: 120px;
 }
 
 .nav-user-button:hover,
@@ -124,7 +127,10 @@ h2.solutions-title {
 }
 
 .after-title,
-.info-user-choose {
+.info-user-choose,
+.info-user-notfound,
+.info-user-search-div,
+.registration-new-user {
     margin: 0;
     border: 1px solid #939598;
     border-radius: 5px;
@@ -141,11 +147,67 @@ h2.solutions-title {
 }
 
 .info-user-choose {
-    padding: 8px 0;
+    /* text-align: center; */
+    padding: 8px 32px;
 }
 
 .info-user-search-div {
+    padding-left: 32px;
+    padding-right: 30px;
+}
+
+.user-search-form input,
+.registration input[type="text"] {
     /* Что-то */
+    width: 100px;
+    text-align: center;
+
+    background-color: #E6E7E8;
+
+    border: 1px solid #BCBEC0;
+    border-radius: 2px;
+}
+
+input[name="street-name"] {
+    width: 320px;
+    text-align: left;
+
+    padding-left: 10px;
+}
+.registration-new-user {
+    /* text-align: center; */
+    padding-left: 32px;
+}
+
+.registration-item:first-child input{
+    width: 200px;
+    /* text-align: center; */
+    text-align: left;
+
+    padding-left: 10px;
+}
+
+.registration-item input[name="street"] {
+    width: 420px;
+
+    text-align: left;
+
+    padding-left: 10px;
+}
+
+.user-search-item {
+    /* display : flex;
+    justify-content: center; */
+    text-align: center;
+}
+
+.registration-button-item {
+    text-align: center;
+    /* width: 150px; */
+}
+
+.button-registration {
+    width: 380px;
 }
 
 .nav-user-div input {
@@ -172,7 +234,7 @@ h2.solutions-title {
 .nav-user-div>.phone {
     /* text-align: center; */
     display: inline-block;
-    width: 155px;
+    width: 180px;
     text-align: center;
     margin: 0;
     padding: 0;
