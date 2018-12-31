@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Страница колл-центра</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
@@ -30,12 +30,17 @@
               <button
                 type="button"
                 class="nav-user-button button-search button"
+                id="button-search"
               >
                 Поиск
               </button>
             </li>
             <li class="nav-user nav-user-item">
-              <button type="button" class="nav-user-button button-new button">
+              <button
+                type="button"
+                class="nav-user-button button-new button"
+                id="button-new"
+              >
                 Новый
               </button>
             </li>
@@ -197,13 +202,13 @@
               />
             </p>
             <p class="registration-button-item">
-            <button
-              type="submit"
-              class="button button-border button-registration"
-            >
-              Перевести звоно на специалиста
-            </button>
-          </p>
+              <button
+                type="submit"
+                class="button button-border button-registration"
+              >
+                Перевести звонок на специалиста
+              </button>
+            </p>
           </form>
         </div>
 
@@ -222,7 +227,7 @@
             <p class="user-rate">Тариф пользователя</p>
             <p class="user-rate-speed">xxxx</p>
             <span class="span-speed">Мб/с</span>
-            <p class="user-rate-cost">xxxx</p>
+            <p class="user-rate-cost">xxx</p>
             <span class="span-rub">р.</span>
           </li>
           <li class="info-user-item">
@@ -236,7 +241,7 @@
             <span class="green">1.5</span>
             <p class="user-balance-name">Счет</p>
             <p class="user-balance-date">xx.xx.xxxx</p>
-            <p class="user-balance">xxxx</p>
+            <p class="user-balance">xxx</p>
             <span class="span-rub">р.</span>
           </li>
           <li class="info-user-item">
@@ -288,48 +293,189 @@
 
         <ul class="info-firm-list">
           <li class="info-firm-item">
+            <a id="info-1">
+              <span class="blue">2.1</span>
+              <p class="firm-adress">
+                Старый Петергоф, ул. Ботаническая д.18/3
+              </p>
+            </a>
+          </li>
+          <li class="info-firm-item">
+            <a id="info-2">
+              <span class="blue">2.2</span>
+              <p class="firm-workhour">Режим работы офисов</p>
+            </a>
+          </li>
+          <li class="info-firm-item">
+            <a id="info-3">
+              <span class="blue">2.3</span>
+              <p class="firm-refill-balance">Пополнение счета</p>
+            </a>
+          </li>
+          <li class="info-firm-item">
+            <a id="info-4">
+              <span class="blue">2.4</span>
+              <p class="firm-сonnection">Подключение</p>
+            </a>
+          </li>
+          <li class="info-firm-item">
+            <a id="info-5">
+              <span class="blue">2.5</span>
+              <p class="firm-promotions">Акции</p>
+            </a>
+          </li>
+          <li class="info-firm-item">
+            <a id="info-6">
+              <span class="blue">2.6</span>
+              <p class="firm-tariffs-internet">Тарифы Интернет</p>
+            </a>
+          </li>
+          <li class="info-firm-item">
+            <a id="info-7">
+              <span class="blue">2.7</span>
+              <p class="firm-tariffs-tv">Тарифы ТВ</p>
+            </a>
+          </li>
+          <li class="info-firm-item">
+            <a id="info-8">
+              <span class="blue">2.8</span>
+              <p class="firm-tariffs-telephony">Тарифы Телефонии</p>
+            </a>
+          </li>
+          <li class="info-firm-item">
+            <a id="info-9">
+              <span class="blue">2.9</span>
+              <p class="firm-tariffs-CCTV">Тарифы Видеонаблюдение</p>
+            </a>
+          </li>
+          <li class="info-firm-item">
+            <a id="info-10">
+              <span class="blue">2.10</span>
+              <p class="firm-price-services">Тарифы на работы Мастера</p>
+            </a>
+          </li>
+          <li class="info-firm-item">
+            <a id="info-11">
+              <span class="blue">2.11</span>
+              <p class="firm-price-devices">Цены на оборудование</p>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="info-firm-inner-list hidden">
+          <li class="info-firm-inner-back">
+            <button class="button button-back">&#60;&#60;</button>
+            <!-- <p>Заголовок</p> -->
+          </li>
+          <li class="info-firm-inner-1 hidden">
             <span class="blue">2.1</span>
-            <p class="firm-adress">Старый Петергоф, ул. Ботаническая д.18/3</p>
+            <p class="firm-workhour">
+              Старый Петергоф, ул. Ботаническая д.18/3Старый Петергоф, ул.
+              Ботаническая д.18/3Старый Петергоф, ул. Ботаническая д.18/3Старый
+              Петергоф, ул. Ботаническая д.18/3Старый Петергоф, ул. Ботаническая
+              д.18/3Старый Петергоф, ул. Ботаническая д.18/3Старый Петергоф, ул.
+              Ботаническая д.18/3Старый Петергоф, ул. Ботаническая д.18/3
+            </p>
           </li>
-          <li class="info-firm-item">
+          <li class="info-firm-inner-2 hidden">
             <span class="blue">2.2</span>
-            <p class="firm-workhour">Режим работы офисов</p>
+            <p class="firm-workhour">
+              Режим работы офисов Режим работы офисов Режим работы офисов Режим
+              работы офисов Режим работы офисов Режим работы офисов Режим работы
+              офисов Режим работы офисов Режим работы офисов Режим работы офисов
+              Режим работы офисов Режим работы офисов Режим работы офисов Режим
+              работы офисов Режим работы офисов Режим работы офисов
+            </p>
           </li>
-          <li class="info-firm-item">
+          <li class="info-firm-inner-3 hidden">
             <span class="blue">2.3</span>
-            <p class="firm-refill-balance">Пополнение счета</p>
+            <p class="firm-refill-balance">
+              Пополнение счетаПополнение счетаПополнение счетаПополнение
+              счетаПополнение счетаПополнение счетаПополнение счетаПополнение
+              счетаПополнение счетаПополнение счетаПополнение счетаПополнение
+              счетаПополнение счетаПополнение счета
+            </p>
           </li>
-          <li class="info-firm-item">
+          <li class="info-firm-inner-4 hidden">
             <span class="blue">2.4</span>
-            <p class="firm-сonnection">Подключение</p>
+            <p class="firm-сonnection">
+              ПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключениеПодключение
+            </p>
           </li>
-          <li class="info-firm-item">
+          <li class="info-firm-inner-5 hidden">
             <span class="blue">2.5</span>
-            <p class="firm-promotions">Акции</p>
+            <p class="firm-promotions">
+              АкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкцииАкции
+            </p>
           </li>
-          <li class="info-firm-item">
+          <li class="info-firm-inner-6 hidden">
             <span class="blue">2.6</span>
-            <p class="firm-tariffs-internet">Тарифы Интернет</p>
+            <p class="firm-tariffs-internet">
+              Тарифы ИнтернетТарифы ИнтернетТарифы ИнтернетТарифы ИнтернетТарифы
+              ИнтернетТарифы ИнтернетТарифы ИнтернетТарифы ИнтернетТарифы
+              ИнтернетТарифы ИнтернетТарифы ИнтернетТарифы ИнтернетТарифы
+              ИнтернетТарифы ИнтернетТарифы ИнтернетТарифы ИнтернетТарифы
+              ИнтернетТарифы ИнтернетТарифы ИнтернетТарифы ИнтернетТарифы
+              Интернетv
+            </p>
           </li>
-          <li class="info-firm-item">
+          <li class="info-firm-inner-7 hidden">
             <span class="blue">2.7</span>
-            <p class="firm-tariffs-tv">Тарифы ТВ</p>
+            <p class="firm-tariffs-tv">
+              Тарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы
+              ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы
+              ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы
+              ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы
+              ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВТарифы ТВ
+            </p>
           </li>
-          <li class="info-firm-item">
+          <li class="info-firm-inner-8 hidden">
             <span class="blue">2.8</span>
-            <p class="firm-tariffs-telephony">Тарифы Телефонии</p>
+            <p class="firm-tariffs-telephony">
+              Тарифы ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы
+              ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы
+              ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы
+              ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы
+              ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы
+              ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы
+              ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы ТелефонииТарифы
+              Телефонииv
+            </p>
           </li>
-          <li class="info-firm-item">
+          <li class="info-firm-inner-9 hidden">
             <span class="blue">2.9</span>
-            <p class="firm-tariffs-CCTV">Тарифы Видеонаблюдение</p>
+            <p class="firm-tariffs-CCTV">
+              Тарифы ВидеонаблюдениеТарифы ВидеонаблюдениеТарифы
+              ВидеонаблюдениеТарифы ВидеонаблюдениеТарифы ВидеонаблюдениеТарифы
+              ВидеонаблюдениеТарифы ВидеонаблюдениеТарифы ВидеонаблюдениеТарифы
+              ВидеонаблюдениеТарифы ВидеонаблюдениеТарифы ВидеонаблюдениеТарифы
+              ВидеонаблюдениеТарифы ВидеонаблюдениеТарифы ВидеонаблюдениеТарифы
+              ВидеонаблюдениеТарифы ВидеонаблюдениеТарифы ВидеонаблюдениеТарифы
+              ВидеонаблюдениеТарифы ВидеонаблюдениеТарифы Видеонаблюдение
+            </p>
           </li>
-          <li class="info-firm-item">
+          <li class="info-firm-inner-10 hidden">
             <span class="blue">2.10</span>
-            <p class="firm-price-services">Тарифы на работы Мастера</p>
+            <p class="firm-price-services">
+              Тарифы на работы МастераТарифы на работы МастераТарифы на работы
+              МастераТарифы на работы МастераТарифы на работы МастераТарифы на
+              работы МастераТарифы на работы МастераТарифы на работы
+              МастераТарифы на работы МастераТарифы на работы МастераТарифы на
+              работы МастераТарифы на работы МастераТарифы на работы
+              МастераТарифы на работы МастераТарифы на работы МастераТарифы на
+              работы МастераТарифы на работы Мастераv
+            </p>
           </li>
-          <li class="info-firm-item">
+          <li class="info-firm-inner-11 hidden">
             <span class="blue">2.11</span>
-            <p class="firm-price-devices">Цены на оборудование</p>
+            <p class="firm-price-devices">
+              Цены на оборудованиеЦены на оборудованиеЦены на оборудованиеЦены
+              на оборудованиеЦены на оборудованиеЦены на оборудованиеЦены на
+              оборудованиеЦены на оборудованиеЦены на оборудованиеЦены на
+              оборудованиеЦены на оборудованиеЦены на оборудованиеЦены на
+              оборудованиеЦены на оборудованиеЦены на оборудованиеЦены на
+              оборудованиеЦены на оборудование
+            </p>
           </li>
         </ul>
       </section>
@@ -401,5 +547,6 @@
       </section>
     </main>
     <footer class="main-footer"></footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
