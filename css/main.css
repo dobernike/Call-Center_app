@@ -51,9 +51,9 @@ section {
 }
 
 .info-firm {
-    background-color: #F1F2F2;
-    border: 1px solid #F1F2F2;
-    border-radius: 10px;
+  background-color: #F1F2F2;
+  /* border: 1px solid #F1F2F2; */
+  border-radius: 10px;
 }
 
 .green {
@@ -236,12 +236,12 @@ input[name="street-name"] {
   padding: 0;
 }
 
-.nav-user-div > form,
+.nav-user-div>form,
 .nav-user-div li {
   border-right: 1px solid #939598;
 }
 
-.nav-user-div > .phone {
+.nav-user-div>.phone {
   display: inline-block;
   width: 170px;
   text-align: center;
@@ -263,30 +263,30 @@ li {
   justify-content: space-between;
 }
 
-li > a {
-    display: flex;
-    cursor: pointer;
+li>a {
+  display: flex;
+  cursor: pointer;
 }
 
-li > a > span {
-    text-decoration: none;
+li>a>span {
+  text-decoration: none;
 }
 
-li > a > p {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 10px 0;
-    color: black;
-    text-decoration: underline;
-    
+li>a>p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px 0;
+  color: black;
+  text-decoration: underline;
+
 }
 
-li > a > p:hover,
-li > a > p:focus {
-    text-decoration: none;
+li>a>p:hover,
+li>a>p:focus {
+  text-decoration: none;
 }
 
-li > p,
+li>p,
 li span {
   margin: 0px;
   padding: 10px 0;
@@ -297,7 +297,7 @@ li span:first-child {
   width: 24px;
 }
 
-li > span:last-child {
+li>span:last-child {
   /* border: 1px green solid; */
   width: 35px;
 }
@@ -320,23 +320,23 @@ li p:nth-of-type(3) {
   padding: 10px 86px 10px 0px;
 }
 
-li > p.user-rate-speed {
+li>p.user-rate-speed {
   max-width: 40px;
 }
 
-li > p.user-router-status {
+li>p.user-router-status {
   min-width: 69px;
   text-align: left;
 }
 
-li > p.user-devices-quantity,
-li > p.user-CCTV-quantity,
-li > p.user-telephony-quantity,
-li > p.diagnostics-link {
+li>p.user-devices-quantity,
+li>p.user-CCTV-quantity,
+li>p.user-telephony-quantity,
+li>p.diagnostics-link {
   max-width: 32px;
 }
 
-li.solutions-item > p:first-child {
+li.solutions-item>p:first-child {
   margin-left: 35px;
 }
 
