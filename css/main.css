@@ -32,7 +32,7 @@ body {
   padding: 0;
 
   font-family: "Proxima Nova", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
 }
 
@@ -95,7 +95,7 @@ section {
 }
 
 .button-choose {
-  margin-left: 40px;
+  margin-left: 15px;
 }
 
 .nav-user-button {
@@ -127,10 +127,12 @@ h2 {
 
 h2.info-user-title {
   background-color: #65ad45;
+  border-radius: 5px 5px 0 0;
 }
 
 h2.info-firm-title {
   background-color: #0b9bce;
+  border-radius: 5px 5px 0 0;
 }
 
 h2.diagnostics-user-title {
@@ -146,9 +148,13 @@ h2.solutions-title {
 .info-user-notfound,
 .info-user-search-div,
 .registration-new-user {
+  font-size: 20px;
+
   margin: 0;
+
   border: 1px solid #939598;
-  border-radius: 5px;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
   /* border-top-color: white; */
   /* border-top: none; */
 }
@@ -172,9 +178,15 @@ h2.solutions-title {
   padding-right: 30px;
 }
 
+.info-user-search {
+  margin:0; 
+  padding-top: 10px;
+}
+
 .user-search-form input,
 .registration input[type="text"] {
   width: 100px;
+  height: 32px;
   text-align: center;
 
   background-color: #e6e7e8;
@@ -194,8 +206,14 @@ input[name="street-name"] {
   padding-left: 32px;
 }
 
+.registration-new-user-p {
+  margin: 0;
+  padding-top: 10px;
+}
+
 .registration-item:first-child input {
   width: 200px;
+  height: 32px;
   text-align: left;
 
   padding-left: 10px;
@@ -213,6 +231,15 @@ input[name="street-name"] {
   text-align: center;
 }
 
+.user-search-item-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-search-item-input input {
+  height: 32px;
+}
+
 .registration-button-item {
   text-align: center;
 }
@@ -221,16 +248,23 @@ input[name="street-name"] {
   width: 380px;
 }
 
-.nav-user-div input {
-  width: 52px;
-  height: 12px;
+.nav-user-div {
+  /* Временно */
+  border-radius: 0;
 }
 
 .nav-user-div * {
   display: inline;
   text-align: center;
-  padding: 5px 10px;
+  padding: 5px 7px;
 }
+
+
+.nav-user-div input {
+  width: 52px;
+  height: 12px;
+}
+
 
 .nav-user-div ul {
   padding: 0;
@@ -294,12 +328,14 @@ li span {
 
 li span:first-child {
   margin-right: 10px;
-  width: 24px;
+  padding-left: 16px;
+  font-size: 30px;
+  width: 50px;
 }
 
 li>span:last-child {
-  /* border: 1px green solid; */
-  width: 35px;
+  border: 1px green solid;
+  width: 50px;
 }
 
 li p:nth-of-type(1) {
@@ -307,7 +343,7 @@ li p:nth-of-type(1) {
 }
 
 li p:nth-of-type(2) {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   flex: 0 0 10em;
 }
 
@@ -317,15 +353,15 @@ li p:nth-of-type(3) {
 }
 
 .span-speed {
-  padding: 10px 86px 10px 0px;
+  padding: 10px 135px 10px 0px;
 }
 
 li>p.user-rate-speed {
-  max-width: 40px;
+  max-width: 52px;
 }
 
 li>p.user-router-status {
-  min-width: 69px;
+  min-width: 100px;
   text-align: left;
 }
 
@@ -333,11 +369,15 @@ li>p.user-devices-quantity,
 li>p.user-CCTV-quantity,
 li>p.user-telephony-quantity,
 li>p.diagnostics-link {
-  max-width: 32px;
+  max-width: 46px;
+}
+
+.diagnostics-device-mac {
+  text-align: end;
 }
 
 li.solutions-item>p:first-child {
-  margin-left: 35px;
+  margin-left: 76px;
 }
 
 .firm-adress-inner {

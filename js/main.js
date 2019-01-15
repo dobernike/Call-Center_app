@@ -2,6 +2,7 @@ var buttonContract = document.getElementById("button-search");
 var searchDiv = document.getElementsByClassName('info-user-search-div')[0];
 var buttonNew = document.getElementById("button-new");
 var newAddDiv = document.getElementsByClassName('registration-new-user')[0];
+var infoUserList = document.querySelector('.info-user-list');
 
 buttonContract.onclick = function () {
     hideShow(searchDiv, newAddDiv);
@@ -38,8 +39,10 @@ for (var i = 0; i < infoList.children.length; i++) {
 function hideShow(div, div2) {
     if (div.classList.contains('hidden') && div2.classList.contains('hidden')) {
         div.classList.remove('hidden');
+        infoUserList.classList.add('hidden');
     } else {
         div.classList.add('hidden');
         div2.classList.add('hidden');
+        infoUserList.classList.remove('hidden');
     }
 }
