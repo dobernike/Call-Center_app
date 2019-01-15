@@ -334,7 +334,7 @@ li span:first-child {
 }
 
 li>span:last-child {
-  border: 1px green solid;
+  /* border: 1px green solid; */
   width: 50px;
 }
 
@@ -343,7 +343,7 @@ li p:nth-of-type(1) {
 }
 
 li p:nth-of-type(2) {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   flex: 0 0 10em;
 }
 
